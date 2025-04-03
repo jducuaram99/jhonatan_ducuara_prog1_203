@@ -17,4 +17,3 @@ difsimetrica=danzas^deportes
 print(f" diferencia simetrica{danzas^deportes}")
 
 
-

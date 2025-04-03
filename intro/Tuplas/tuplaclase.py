@@ -10,40 +10,55 @@ print(type(t))
 print(t)
 t=t+(10,)
 print(t)
-def creartupla():
-    tupla=()
-    cantidad=random.randint(5,15)
-    for i in range(cantidad):
-        tupla+=(random.randint(1,100),)
-    return tupla
-tupla1=creartupla()
+#Para que sea tupla (agregarle una coma)
+
+#Escriba una funcion que permita llenar una tupla con elementos entre 1 y 100 y lacantidad varia entre 5 y 15.
+import random
+def crearTupla():
+   tupla=()
+   cantidad=random.randint(5,15)
+   for i in range(cantidad):
+      tupla+=(random.randint(1,100),)
+   return tupla
+tupla1=crearTupla()
 print(tupla1)
 print(tupla1[0])
-print(tupla[-1])
-def sumatupla(raro):
-    suma=0
-    for x in tupla:
-        suma+=x
-    return suma        
+print(tupla1[-1])
+suma=0
+for x in tupla1:
+   suma+=x
+print(suma)
 
-def meantupla(ttt):
-    return(sumatupla(tupla1))
 
+def sumarTupla(tt):
+   suma=0
+   for x in tt:
+    suma+=x
+    return suma
+   
+def meanTupla(ttt):
+   return sumarTupla(ttt)/len(ttt)
 tup=(1,2,3)
-print(sumatupla(tupla1))
-print(sumatupla(tup))
+print(sumarTupla(tupla1))
+print(sumarTupla(tup))
+   
+print(meanTupla(tupla1))
+print(meanTupla(tup))
 
-print(meantupla(tupla1))
-print(meantupla(tup))
+#Mayor y menor
+def mayortupla(tupla1):
+   mayor1=0
+   for m in tupla1:
+      if m>mayor1:
+         mayor1=m
+   return mayor1
 
-def mayortupla(tupla)
-if tupla1<tup
-    print("tupla1 es menor que tup")
+def menortupla(tupla1):
+   menor1=100
+   for m in tupla1:
+      if m<menor1:
+         menor1=m
+   return menor1
 
-elif tupla1>tup
-    print("tupla1 es mayor que tup")
-else:
-    print("las tuplas son iguales")    
-
-
-#escriba una funcion que permita llenar una tupla. elementos entre 1 y 100 y la cantidad varia entre 1 y 15
+print(menortupla(tupla1))
+print(mayortupla(tupla1))

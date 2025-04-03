@@ -1,6 +1,4 @@
-#1. Llenar un arreglo de n elementos con números generados con la función random. N es
-ingresado por el usuario. Diseñe un menú con las siguientes operaciones.
-b.Suma
+#1. Llenar un arreglo de n elementos con números generados con la función random. N es ingresado por el usuario. Diseñe un menú con las siguientes operaciones.b.Suma
 import random
 def nuevovector(j):
     return [random.randint(1, 100) for i in range(j)]

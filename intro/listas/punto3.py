@@ -1,6 +1,5 @@
-#1. Llenar un arreglo de n elementos con números generados con la función random. N es
-ingresado por el usuario. c. Promedio
- import random
+#1. Llenar un arreglo de n elementos con números generados con la función random. N es ingresado por el usuario. c. Promedio
+import random
 def nuevovector(j):
     return [random.randint(1, 100) for _ in range(j)]
 def cprom(vector):
